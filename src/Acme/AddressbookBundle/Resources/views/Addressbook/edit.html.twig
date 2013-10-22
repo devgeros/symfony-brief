@@ -1,0 +1,15 @@
+{% extends "AcmeAddressbookBundle::layout.html.twig" %}
+
+{% block title "Address book - Edit user" %}
+
+{% block content %}
+    <h1>Edit user with ID: {{ user.id }}</h1>
+    <hr>
+    <br>
+    {%
+        include 'AcmeAddressbookBundle:partials:form.html.twig' with {
+            'form': form,
+            'formAction': path('_addressbook_edit', {'id': user.id}),
+         }
+    %}
+{% endblock %}

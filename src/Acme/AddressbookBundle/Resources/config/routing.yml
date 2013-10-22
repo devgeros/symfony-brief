@@ -1,0 +1,4 @@
+_addressbook:
+    resource: "@AcmeAddressbookBundle/Controller/AddressbookController.php"
+    type: annotation
+    prefix: /addressbook

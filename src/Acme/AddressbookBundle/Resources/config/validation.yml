@@ -1,0 +1,23 @@
+Acme\AddressbookBundle\Entity\User:
+    properties:
+        firstName:
+            - Length:
+                min: 2
+                max: 10
+                minMessage: "Your first name must be at least {{ limit }} characters length"
+                maxMessage: "Your first name cannot be longer than {{ limit }} characters length"
+            - NotBlank:
+                message: "Please enter a first name."
+        lastName:
+            - Length:
+                min: 2
+                max: 50
+                minMessage: "Your last name must be at least {{ limit }} characters length"
+                maxMessage: "Your last name cannot be longer than {{ limit }} characters length"
+            - NotBlank:
+        addressLine1:
+            - Length:
+                min: 2
+                max: 50
+                minMessage: "The first line of your address must be at least {{ limit }} characters length"
+                maxMessage: "The first line of your address cannot be longer than {{ limit }} characters length"

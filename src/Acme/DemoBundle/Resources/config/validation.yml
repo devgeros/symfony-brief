@@ -1,0 +1,23 @@
+Acme\DemoBundle\Entity\User:
+    properties:
+        firstName:
+            - Length:
+                min: 2
+                max: 10
+                minMessage: "Your first name must be at least {{ limit }} characters length"
+                maxMessage: "Your first name cannot be longer than {{ limit }} characters length"
+            - NotBlank:
+                message: "Please enter a first name."
+        lastName:
+            - Length:
+                min: 2
+                max: 50
+                minMessage: "Your first name must be at least {{ limit }} characters length"
+                maxMessage: "Your first name cannot be longer than {{ limit }} characters length"
+            - NotBlank:
+        addressLine1:
+            - Length:
+                min: 2
+                max: 50
+                minMessage: "Your first name must be at least {{ limit }} characters length"
+                maxMessage: "Your first name cannot be longer than {{ limit }} characters length"

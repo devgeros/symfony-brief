@@ -1,0 +1,17 @@
+<form action="{{ formAction }}" method="POST" id="adduser_form">
+    {{ form_errors(form) }}
+
+    {{ form_label(form.firstName, '*First Name:') }}
+    {{ form_widget(form.firstName) }}
+    {{ form_errors(form.firstName) }}
+    {{ form_row(form.lastName) }}
+    {{ form_row(form.addressLine1) }}
+    {{ form_row(form.addressLine2) }}
+    {{ form_row(form.city) }}
+    {{ form_row(form.postcode) }}
+    {{ form_row(form.telephoneHome) }}
+    {{ form_row(form.telephoneMobile) }}
+
+    {{ form_rest(form) }}
+    <input type="submit" value="Submit" />
+</form>
